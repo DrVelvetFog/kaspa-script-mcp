@@ -10,14 +10,24 @@ constants are generated from `rusty-kaspa` v2.1.0 (commit `01b532e`).
 - **explain_script_error** — plain-language explanation + fix for txscript errors (metering, stack, opcode, push-encoding, ZK integrity).
 - **lookup_opcode** — by hex code or name.
 
-## Build & run
+## Install
+
+No build needed. Add it to your MCP client (Claude Code, Claude Desktop, Cursor, VS Code):
+
+```json
+{ "mcpServers": { "kaspa-script": { "command": "npx", "args": ["-y", "kaspa-script-mcp"] } } }
+```
+
+In Claude Code: `claude mcp add kaspa-script -- npx -y kaspa-script-mcp`
+
+## Build from source
 ```
 npm install && npm run build
 node dist/selftest.js   # 17 checks
 node dist/index.js      # stdio MCP server
 ```
 
-## Client config (Claude Code / desktop)
+To run a local build instead, point the client at it:
 ```json
 { "mcpServers": { "kaspa-script": { "command": "node", "args": ["<path>/kaspa-script-mcp/dist/index.js"] } } }
 ```

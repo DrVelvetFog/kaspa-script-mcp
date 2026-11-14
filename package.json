@@ -2,15 +2,48 @@
   "name": "kaspa-script-mcp",
   "version": "0.1.0",
   "description": "MCP server for Kaspa (Toccata) script tooling: disassemble, estimate compute cost, and explain txscript errors.",
+  "mcpName": "io.github.DrVelvetFog/kaspa-script-mcp",
   "type": "module",
-  "bin": { "kaspa-script-mcp": "dist/index.js" },
-  "files": ["dist", "README.md"],
+  "bin": {
+    "kaspa-script-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "node --test dist/*.test.js",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build && node dist/selftest.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrVelvetFog/kaspa-script-mcp.git"
+  },
+  "homepage": "https://github.com/DrVelvetFog/kaspa-script-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/DrVelvetFog/kaspa-script-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "kaspa",
+    "txscript",
+    "covenants",
+    "blockchain",
+    "model-context-protocol"
+  ],
+  "author": "Tony Jagodka (UIG Studios)",
   "license": "MIT",
-  "dependencies": { "@modelcontextprotocol/sdk": "^1.0.0" },
-  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.6.0" }
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
 }
