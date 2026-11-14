@@ -1,0 +1,8 @@
+{
+  "name": "kaspa-script-mcp",
+  "version": "0.1.0",
+  "description": "Kaspa script tools: disassemble script hex, estimate compute cost, explain txscript errors, look up opcodes.",
+  "mcpServers": {
+    "kaspa-script": { "command": "npx", "args": ["-y", "kaspa-script-mcp"] }
+  }
+}

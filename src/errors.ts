@@ -14,7 +14,7 @@ const TABLE: ErrExpl[] = [
     title: "ExceededCommittedScriptUnits",
     meaning:
       "The script consumed more execution 'script units' than the compute budget the input committed to and paid for. Script units are charged for pushed bytes (1/byte), hash opcodes (1-2/byte hashed), ZK proofs (fixed), and sig ops. This is a metering limit, not a logic bug.",
-    fix: "Raise the input's committed compute budget (ComputeBudget) so allowed_script_units covers the used amount, or make the script cheaper (fewer/smaller pushes, cheaper hash, avoid re-hashing large data). Use the estimate_cost tool to size the budget before signing.",
+    fix: "Raise the input's committed compute budget (ComputeBudget) so allowed_script_units covers the used amount, or make the script cheaper (fewer/smaller pushes, cheaper hash, avoid re-hashing large data). Use the estimate_script_cost tool to size the budget before signing.",
   },
   {
     match: /element size \d+ exceeds max allowed size|ElementTooBig/i,
