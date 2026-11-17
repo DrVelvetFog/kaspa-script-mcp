@@ -8,7 +8,7 @@ import { explainError } from "./errors.js";
 import { OPCODES } from "./opcodes.js";
 
 const server = new Server(
-  { name: "kaspa-script-mcp", version: "0.1.0" },
+  { name: "kaspa-script-mcp", version: "0.1.1" },
   { capabilities: { tools: {} } }
 );
 
@@ -91,7 +91,7 @@ server.setRequestHandler(CallToolRequestSchema, async (req) => {
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("kaspa-script-mcp v0.1.0 on stdio");
+  console.error("kaspa-script-mcp v0.1.1 on stdio");
 }
 main().catch((e) => {
   console.error(e);

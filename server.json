@@ -3,13 +3,13 @@
   "name": "io.github.DrVelvetFog/kaspa-script-mcp",
   "title": "Kaspa Script Tools",
   "description": "Disassemble Kaspa script hex, estimate compute cost, explain txscript errors, look up opcodes.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": { "url": "https://github.com/DrVelvetFog/kaspa-script-mcp", "source": "github" },
   "packages": [
     {
       "registryType": "npm",
       "identifier": "kaspa-script-mcp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "transport": { "type": "stdio" }
     }
   ]
