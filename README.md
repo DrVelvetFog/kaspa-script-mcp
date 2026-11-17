@@ -1,5 +1,7 @@
 # kaspa-script-mcp
 
+[![Kaspa Script Tools MCP server](https://mcprush.com/badge/kaspa-script-tools-mcp/compact.svg)](https://mcprush.com/to/kaspa-script-tools-mcp?ref=badge)
+
 An MCP server with tooling for Kaspa's Toccata-era script/covenant layer. Pure
 TypeScript, no node or SDK dependency at runtime — the opcode table and pricing
 constants are generated from `rusty-kaspa` v2.1.0 (commit `01b532e`).
