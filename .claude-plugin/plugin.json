@@ -1,0 +1,18 @@
+{
+  "name": "kaspa-script-mcp",
+  "displayName": "Kaspa Script Tools",
+  "version": "0.1.1",
+  "description": "Kaspa (Toccata) script tooling for Claude Code: disassemble script hex, estimate per-input compute cost, explain txscript errors, and look up opcodes. Deterministic and offline, pinned to rusty-kaspa v2.1.0. Bundles the kaspa-script-mcp server and the Kaspa Script Debugger skill.",
+  "author": { "name": "Tony Jagodka (UIG Studios)", "url": "https://github.com/DrVelvetFog" },
+  "homepage": "https://github.com/DrVelvetFog/kaspa-script-mcp#readme",
+  "repository": "https://github.com/DrVelvetFog/kaspa-script-mcp",
+  "license": "MIT",
+  "keywords": ["kaspa", "txscript", "covenants", "toccata", "mcp", "debugger"],
+  "skills": ["./agensi-skill"],
+  "mcpServers": {
+    "kaspa-script": {
+      "command": "npx",
+      "args": ["-y", "kaspa-script-mcp@0.1.1"]
+    }
+  }
+}
