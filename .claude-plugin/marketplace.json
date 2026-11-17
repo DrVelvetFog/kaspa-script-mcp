@@ -1,0 +1,16 @@
+{
+  "name": "kaspa-script-tools",
+  "description": "Kaspa script tooling for Claude Code: the kaspa-script-mcp server plus the Kaspa Script Debugger skill.",
+  "owner": {
+    "name": "Tony Jagodka (UIG Studios)",
+    "url": "https://github.com/DrVelvetFog"
+  },
+  "plugins": [
+    {
+      "name": "kaspa-script-mcp",
+      "source": "./",
+      "description": "Disassemble Kaspa script hex, estimate per-input compute cost, explain txscript errors, and look up opcodes. Deterministic and offline, pinned to rusty-kaspa v2.1.0.",
+      "version": "0.1.1"
+    }
+  ]
+}

@@ -22,6 +22,14 @@ No build needed. Add it to your MCP client (Claude Code, Claude Desktop, Cursor,
 
 In Claude Code: `claude mcp add kaspa-script -- npx -y kaspa-script-mcp`
 
+Or install it as a Claude Code plugin, which adds the server plus the Kaspa Script
+Debugger skill (tells Claude when to use each tool):
+
+```
+/plugin marketplace add DrVelvetFog/kaspa-script-mcp
+/plugin install kaspa-script-mcp@kaspa-script-tools
+```
+
 ## Build from source
 ```
 npm install && npm run build
